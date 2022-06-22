@@ -20,9 +20,8 @@ body{
     border: none;
     margin-right: 20px;
     padding: 25px;
-    border: none;
     border-radius: 20px;
-    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    background: linear-gradient(145deg, #fff9f9, #f0f0f0);
    
 }
 .fa-lg { 
@@ -30,7 +29,7 @@ body{
     vertical-align: -15%;
     line-height: .75em;
 }
-    #footer {
+#footer {
         position: fixed;
         padding: 20px;
         bottom: 0;
@@ -38,4 +37,4 @@ body{
         /* Height of the footer*/ 
         height: 40px;
         background: gray;
-    }
+}
