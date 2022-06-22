@@ -11,7 +11,19 @@
     margin-bottom: 3rem;
 }
 body{
-    background-color: rgb(15, 14, 14);
+    background-color: rgb(252, 252, 252);
+}
+
+.searchbar {
+    width: 52vw;
+    height: 52px;
+    border: none;
+    margin-right: 20px;
+    padding: 25px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+   
 }
 .fa-lg { 
     font-size: 1.2 rem;
