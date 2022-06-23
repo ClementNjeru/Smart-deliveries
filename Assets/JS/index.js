@@ -8,8 +8,8 @@
       completeddata.map((value) => {
         data1 += `
       <div id="drinks">
-        <h3>${value.strDrink}</h3>
         <img src=${value.strDrinkThumb} alt="img" class ="images">
+        <h3>${value.strDrink}</h3>
         <p> ${value.idDrink}</p>
       </div>
     `
@@ -21,3 +21,4 @@
     })
   // eventlisterner
 
+const btn1 = document.getElementById('#btn1');
