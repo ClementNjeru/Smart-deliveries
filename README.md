@@ -48,6 +48,6 @@ Authors Info Slack Profile - [Clement Njeru]
 Email - [njeruclement36@gmail.com], [clement.kemaro@student.moringaschool.com]
 LinkedIn Profile - [Clement Njeru]
 ***
-## [License](LICENSE)
+## LICENSE
 MIT License
 Copyright (c) 2022 Clement Njeru
