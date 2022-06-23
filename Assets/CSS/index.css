@@ -2,12 +2,13 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    padding: 0px;
 }
 
 .section{
     background-color: rgb(22, 20, 20);
     color:  rgb(233, 133, 12);
-    padding: 40px;
+    padding: 10px;
     margin-bottom: 3rem;
     font-size: xx-large;
 }
@@ -42,4 +43,22 @@ body{
     border: none;
     width:10vw;
     
+}
+.images{
+    width: 350px;
+    border-radius: 20px;
+    max-height: 500px;
+}
+
+#drink{
+width: 90vw;
+margin: 0 auto;
+max-width: 1170px;
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+grid-column-gap: 3rem;
+
+}
+#drinks{
+    justify-content: space-between;
 }
