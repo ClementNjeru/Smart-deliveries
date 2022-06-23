@@ -25,6 +25,7 @@ body{
     padding: 25px;
     border-radius: 20px;
     background: linear-gradient(145deg, #fff9f9, #f0f0f0);
+  
    
 }
 #footer {
@@ -42,6 +43,7 @@ body{
     height: 52px;
     border: none;
     width:10vw;
+    cursor: pointer;
     
 }
 .images{
