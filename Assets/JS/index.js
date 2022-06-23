@@ -20,31 +20,8 @@
 //         })
 // }
 // getCocktails()
-
-
-const renderPerson = (person) => {
-    let card = document.createElement("li");
-    card.className = "card";
-    card.innerHTML = `
-    <h2>Name: ${person.name}</h2>
-      <div class="content hidden">
-          <p>Mass: ${person.mass}Kgs</p>
-          <p>Hair Color: ${person.hair_color}</p>
-          <p>Skin Color: ${person.skin_color}</p>
-      </div>
-      <button class="btn">More Info</button>`;
-    document.getElementById("container").appendChild(card);
-    document.querySelectorAll(".btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        document.querySelectorAll(".content").forEach((item) => {
-          item.classList.toggle("hidden");
-          console.log("clicked");
-        });
-      });
-    });
-  };
   
-  //2. Async Await
+  //2. initializing
   const getCocktails = async () => {
     const response = await fetch("http://localhost:3000/drinks");
     const data = await response.json();
@@ -56,3 +33,26 @@ const renderPerson = (person) => {
   };
   
   getCocktails();
+
+//   elements
+const checkDrink = (drinks) => {
+    let card = document.createElement("li");
+    card.className = "drinks";
+    card.innerHTML = `
+    <h2>Name: ${drinks.name}</h2>
+    <div class = "dname">
+        <p>strDrink: ${drinks.strDrink}<p/>
+        <p>strDrinkThumb: ${drinks.strDrinkThumb}<p/>
+    <div/>
+    `
+    document.getElementById("drinks").appendChild(card);
+    document.querySelectorAll(".btn").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".content").forEach((item) => {
+          item.classList.toggle("hidden");
+          console.log("clicked");
+        });
+      });
+    });
+
+}
