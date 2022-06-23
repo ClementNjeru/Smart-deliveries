@@ -5,13 +5,15 @@
 }
 
 .section{
-    background-color: gray;
-    color: rgb(233, 133, 12);
+    background-color: rgb(22, 20, 20);
+    color:  rgb(233, 133, 12);
     padding: 40px;
     margin-bottom: 3rem;
+    font-size: xx-large;
 }
+
 body{
-    background-color: rgb(131, 120, 120);
+    background-color: rgb(167, 157, 157);
 }
 
 .searchbar {
@@ -24,18 +26,12 @@ body{
     background: linear-gradient(145deg, #fff9f9, #f0f0f0);
    
 }
-.fa-lg { 
-    font-size: 1.2 rem;
-    vertical-align: -15%;
-    line-height: .75em;
-}
 #footer {
         position: fixed;
         padding: 20px;
         bottom: 0;
         width: 100%;
-        /* Height of the footer*/ 
-        height: 40px;
+        height: 50px;
         background: gray;
 }
 #btn1 {
