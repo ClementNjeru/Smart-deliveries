@@ -1,27 +1,4 @@
-// document.getElementById('search').addEventListener('click', getCocktails)
-
-// function getCocktails() {
-//     // const search = document.getElementById ('search')
-//     fetch(`http://localhost:3000/drinks`)
-//         .then(resp => resp.json())
-//         .then(data => {
-//             console.log(data)
-//             let html = "";
-//             data.forEach(drink => {
-//                 // output =+
-//                 //     // output +
-//              html += `
-//         <div class="drinks" id = "drink">
-//         <img src="${data.strDrinkThumb}"alt="drink">
-//         <h3>${data.strDrink}</h3>
-//     </div>  
-//     `
-//             });
-//         })
-// }
-// getCocktails()
-  
-  //2. initializing
+  //. initializing
   const getCocktails = async () => {
     const response = await fetch("http://localhost:3000/drinks");
     const data = await response.json();
@@ -38,8 +15,9 @@
 const checkDrink = (drinks) => {
     let card = document.createElement("li");
     card.className = "drinks";
-    card.innerHTML = `
-    <h2>Name: ${drinks.name}</h2>
+    
+    card.innerHTML =  html=+`
+    <h2>Name: ${drinks.strDrink}</h2>
     <div class = "dname">
         <p>strDrink: ${drinks.strDrink}<p/>
         <p>strDrinkThumb: ${drinks.strDrinkThumb}<p/>
@@ -56,3 +34,4 @@ const checkDrink = (drinks) => {
     });
 
 }
+checkDrink();

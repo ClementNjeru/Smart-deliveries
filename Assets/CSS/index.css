@@ -38,3 +38,11 @@ body{
         height: 40px;
         background: gray;
 }
+#btn1 {
+    background-color: rgb(233, 133, 12);
+    border-radius: 20px;
+    height: 52px;
+    border: none;
+    width:10vw;
+    
+}
