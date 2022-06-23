@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- header section -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<!-- body section starts -->
 <body>
-    <!-- Division-1-section-->
+    <!-- header container-->
     <div id="m-body">
         <section>
             <div class="section">
@@ -19,21 +20,29 @@
             </div>
         </section>
     </div>
-    <div>
-        <input type="text" class="searchbar" placeholder="Search..." id="search">
-        <button  onclick="bsearch"id="btn1">Order Now!</button>
+    <!-- Searchbar container -->
+    <div class="searchbar">
+        <form id="input">
+            <input type="text" placeholder="Search here..." id="search" class="search" onfocus="this.value=''">
+            <span id="search-container">Search</span>
+        </form>
     </div>
     <br><br>
+    <!-- drinks container (fetched data) -->
     <div id="drink">
 
     </div>
+    <!-- Footer Section -->
     <div id="footer">
         Designed with <i class="fa fa-heart fa-lg"
-            style="color: rgb(233, 133, 12);font-size: medium; text-decoration: none;"></i> by <a href="https://github.com/ClementNjeru/Smart-deliveries"
+            style="color: rgb(233, 133, 12);font-size: medium; text-decoration: none;"></i> by <a
+            href="https://github.com/ClementNjeru/Smart-deliveries"
             style="text-decoration: none; color: rgb(233, 133, 12);">
             Clement Njeru</a>
     </div>
+    <!-- script connection  -->
     <script src="./Assets/JS/index.js"></script>
+<!-- body section ends here... -->
 </body>
 
 </html>

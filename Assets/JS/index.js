@@ -1,5 +1,5 @@
   //. initializing
-  fetch('http://localhost:3000/drinks')
+  fetch(`http://localhost:3000/drinks`)
     .then((data) => {
       return data.json();
     })
@@ -19,6 +19,4 @@
     }).catch((Error) => {
       console.log(Error)
     })
-  // eventlisterner
-
-const btn1 = document.getElementById('#btn1');
+    // search button
