@@ -33,6 +33,7 @@ body{
         width: 100%;
         height: 50px;
         background: gray;
+        text-align: center;
 }
 #btn1 {
     background-color: rgb(233, 133, 12);
