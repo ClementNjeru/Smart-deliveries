@@ -37,16 +37,14 @@
     
     fetch(`http://localhost:3000/drinks${input.value}`)
       .then((resp) => resp.json())
-      .then(Drink => {
+      .then(drinks => {
         data1.innerHTML = "";
-        Drink.results.forEach(value => {
+        drinks.results.forEach(value => {
           completeddata(value)
 
         });
       })
-      
   }
-
   let inputForm = document.querySelector('form')
   inputForm.addEventListener('submit', (event) => {
     event.preventDefault();

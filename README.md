@@ -7,9 +7,9 @@ This is a platform that allows people working from home to navigate through the 
 **
 
 ## Screenshots
- ![image](#)
- ![image](#)
- ![image](#)
+ ![scrnsht1.png](/Assets/IMAGES/scrnsht1.png)
+ ![image](/Assets/IMAGES/scrnsht2.png)
+ ![image](/Assets/IMAGES/scrnsht3.png)
  
 ****
 ## SetUp Instruction
