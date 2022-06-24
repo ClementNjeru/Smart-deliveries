@@ -1,4 +1,7 @@
   //. initializing
+  const drinks = document.getElementById('drink')
+  console.log(drink)
+
   fetch(`http://localhost:3000/drinks`)
     .then((data) => {
       return data.json();
@@ -9,6 +12,7 @@
         data1 += `
       <div id="drinks">
         <img src=${value.strDrinkThumb} alt="img" class ="images">
+        <button onclick="myFunction()" class="bag-btn" id ="like"><i class="fa fa-heart fa-lg"></i></button>
         <h3>${value.strDrink}</h3>
         <p> ${value.idDrink}</p>
       </div>
@@ -19,29 +23,32 @@
     }).catch((Error) => {
       console.log(Error)
     })
-    // search button
+  // order button
+    function myFunction() {
+      alert("Successfully Added");
+    }
 
-    function displayCocktails() {
-      const input = document.getElementById('search').value.
-      fetch(`http://localhost:3000/drinks${input}`)
-        .then(res => res.json())
-        .then(data => {
-          let html = "";
-          if (data.drinks) {
-            //console.log(data)
-            data.drinks.forEach(drink => {
-              data1 += `
-              <div id="drinks">
-              <img src=${value.strDrinkThumb} alt="img" class ="images">
-              <h3>${value.strDrink}</h3>
-              <p> ${value.idDrink}</p>
-            </div>
-                  `
-            })
-          }
-          displayCocktails.innerHTML = html
+
+
+  // function myFunction() {
+  //   alert("Your Order has been received successfully!");
+  // }
+  const searchDrink = () => {
     
-        })
-    
-      }
-      btn1.addEventListener('click', displayCocktails)
+    fetch(`http://localhost:3000/drinks${input.value}`)
+      .then((resp) => resp.json())
+      .then(Drink => {
+        data1.innerHTML = "";
+        Drink.results.forEach(value => {
+          completeddata(value)
+
+        });
+      })
+      
+  }
+
+  let inputForm = document.querySelector('form')
+  inputForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    searchDrink();
+  })

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- header section -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
 </head>
 
 <!-- body section starts -->
+
 <body>
     <!-- header container-->
     <div id="m-body">
@@ -21,10 +23,10 @@
         </section>
     </div>
     <!-- Searchbar container -->
-    <div class="searchbar">
+    <form class="searchbar" action="">
         <input type="text" class="searchbar" placeholder="Search for your favorite drink..." id="search">
-        <button  onclick="bsearch"id="btn1">Order Now!</button> 
-    </div>
+        <button type="submit" id="btn1">Search</button>
+    </form>
     <br><br>
     <!-- drinks container (fetched data) -->
     <div id="drink">
@@ -40,7 +42,7 @@
     </div>
     <!-- script connection  -->
     <script src="./Assets/JS/index.js"></script>
-<!-- body section ends here... -->
+    <!-- body section ends here... -->
 </body>
 
 </html>

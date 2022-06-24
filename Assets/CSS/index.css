@@ -42,12 +42,14 @@ body{
     height: 52px;
     border: none;
     width:10vw;
+    background-color: rgb(243, 196, 108);
 }
 
 #btn1:hover{
-    box-shadow: none;
+    box-shadow: inset 300px 0 0 0 rgb(233, 133, 12);
     cursor: pointer;
-    background-color: rgb(233, 133, 12);
+    color: whitesmoke;
+   
 }
 .images{
     width: 350px;
@@ -67,4 +69,27 @@ grid-column-gap: 3rem;
 }
 #drinks{
     justify-content: space-between;
+}
+
+.bag-btn {
+    /* position: absolute; */
+    top: 10%;
+    right: 0;
+    background: var(--primaryColor);
+    color: rgb(243, 196, 108);
+    border: none;
+    /* text-transform: uppercase; */
+    padding: 0.5rem 0.75rem;
+    letter-spacing: var(--mainSpacing);
+    /* font-weight: bold; */
+    transition: var(--mainTransition);
+    transform: translateX(101%);
+    cursor: pointer;
+}
+.bag-btn:hover{
+    box-shadow: inset 300px 0 0 0 rgb(233, 12, 12);
+    border-radius: 50px;
+    background: var(--primaryColor);
+    transition: var(--mainTransition);
+    transform: translateX(101%);
 }
