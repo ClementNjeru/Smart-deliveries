@@ -17,14 +17,14 @@ body{
     background-color: rgb(167, 157, 157);
 }
 
-.searchbar {
+#search {
     width: 52vw;
     height: 52px;
     border: none;
     margin-right: 20px;
     padding: 25px;
     border-radius: 20px;
-    background: linear-gradient(145deg, #fff9f9, #f0f0f0);
+    background: linear-gradient(145deg, #fff9f9, #f0f0f0); 
   
    
 }

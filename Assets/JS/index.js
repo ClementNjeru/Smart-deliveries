@@ -12,7 +12,7 @@
         <h3>${value.strDrink}</h3>
         <p> ${value.idDrink}</p>
       </div>
-    `
+               `
       });
       document.getElementById("drink").innerHTML = data1;
 
@@ -20,3 +20,28 @@
       console.log(Error)
     })
     // search button
+
+    function displayCocktails() {
+      const searchInputTxt = document.getElementById('search').value.trim()
+      fetch(`http://localhost:3000/drinks${searchInputTxt}`)
+        .then(res => res.json())
+        .then(data => {
+          let html = "";
+          if (data.drinks) {
+            //console.log(data)
+            data.drinks.forEach(drink => {
+              data1 += `
+              <div id="drinks">
+              <img src=${value.strDrinkThumb} alt="img" class ="images">
+              <h3>${value.strDrink}</h3>
+              <p> ${value.idDrink}</p>
+            </div>
+                  `
+            })
+          }
+          displayCocktails.innerHTML = html
+    
+        })
+    
+      }
+      btn1.addEventListener('click', displayCocktails)
