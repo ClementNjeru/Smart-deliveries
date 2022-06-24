@@ -22,8 +22,8 @@
     // search button
 
     function displayCocktails() {
-      const searchInputTxt = document.getElementById('search').value.trim()
-      fetch(`http://localhost:3000/drinks${searchInputTxt}`)
+      const input = document.getElementById('search').value.
+      fetch(`http://localhost:3000/drinks${input}`)
         .then(res => res.json())
         .then(data => {
           let html = "";

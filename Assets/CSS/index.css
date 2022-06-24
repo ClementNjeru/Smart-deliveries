@@ -38,13 +38,16 @@ body{
         text-align: center;
 }
 #btn1 {
-    background-color: rgb(233, 133, 12);
     border-radius: 20px;
     height: 52px;
     border: none;
     width:10vw;
+}
+
+#btn1:hover{
+    box-shadow: none;
     cursor: pointer;
-    
+    background-color: rgb(233, 133, 12);
 }
 .images{
     width: 350px;
