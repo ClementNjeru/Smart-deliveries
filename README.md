@@ -7,7 +7,7 @@ This is a platform that allows people working from home to navigate through the 
 **
 
 ## Screenshots
- ![scrnsht1.png](/Assets/IMAGES/scrnsht1.png)
+ ![image](/Assets/IMAGES/scrnsht1.png)
  ![image](/Assets/IMAGES/scrnsht2.png)
  ![image](/Assets/IMAGES/scrnsht3.png)
  
@@ -33,7 +33,7 @@ This is a platform that allows people working from home to navigate through the 
 Use Live share extension to run the HTML File.
 ***
 ## Live Link
-Or you can access the web application directly via this [LINK.]([link.com/])
+Or you can access the web application directly via this https://clementnjeru.github.io/Smart-deliveries/
 ***
 
 ## Technologies Used

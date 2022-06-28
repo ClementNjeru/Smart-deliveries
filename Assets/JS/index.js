@@ -14,7 +14,7 @@
         <img src=${value.strDrinkThumb} alt="img" class ="images">
         <button onclick="myFunction()" class="bag-btn" id ="like"><i class="fa fa-heart fa-lg"></i></button>
         <h3>${value.strDrink}</h3>
-        <p> ${value.idDrink}</p>
+        
       </div>
                `
       });
@@ -25,7 +25,7 @@
     })
   // order button
     function myFunction() {
-      alert("Successfully Added");
+      alert("Thank you!");
     }
 
 
